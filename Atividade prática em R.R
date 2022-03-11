@@ -67,7 +67,7 @@ Analise[,,c(1:3)] <- Colaboradores
 
 Emprestimo_total1 <- as.numeric(Analise[ , 5, 1])
 Valor_total_Emprestimo1 <- sum(Emprestimo_total)
-Comiss�o_Melissa <- Valor_total_Emprestimo1*0.05
+Comiss�o_Melissa <- Valor_total_Emprestimo1*0.05 # nolint
 
 
 Emprestimo_total2 <- as.numeric(Analise[ , 5, 2])
