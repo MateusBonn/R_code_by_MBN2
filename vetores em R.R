@@ -19,7 +19,6 @@ vendas[1:3]
 ### modificando
 
 vendas[3]<- 13
-vendas
 
 vendas[c(1,4)]<- c(0,90)
 vendas[2:4]<- c(40,35,28)
@@ -95,7 +94,6 @@ v1 < 3
 v1 == 3
 v1 != 3
 
-sum(v1 != 1)
 v5 <- c(1,1,1,2,2,2,3,3,3)
 sum(v1,v2)
 sum(v5 != 1)
