@@ -16,6 +16,8 @@ str(genero_ft)
 Fator <- factor(c("1", "2", "2", "1", "2", "1", "1", "3", "3"))
 str(Fator)
 
+f <- gl(3, 2, labels = c("Recife", "Rio de janeiro", "Brasilia")) # Função gl(qt_fatores, rep, labels= informação dos labels, respeitando a quantidade informada no primeiro)
+
 # Acessando e modificando fatores
 
 genero_ft[5] # acessa o indice
