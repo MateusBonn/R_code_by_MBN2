@@ -86,7 +86,6 @@ length(escolaridade)
 
 Faturamento <- c(scan(nmax = 5))
 
-plot(Faturamento)
 
 Reorder <- fct_reorder(escolaridade, Faturamento, mean) # Reordena os fatores do primeiro com base da função (3° item) do segundo elemento
 plot(Reorder)
