@@ -59,9 +59,32 @@ Indica <- fct_collapse(local,
 
 plot(Indica)
 
+install.packages("languageserver")
+
 # Agrupamento por frequencia usando fct_lump
 
-estado_civil <- factor(c("solteiro", "solteiro", "casado", "casado", "união estavel", "viuvo"))
-
+estado_civil <- factor(c("solteiro", "solteiro", "casado", "casado", "união estavel", "viuvo", "divorciado"))
 plot(estado_civil)
-Agrupado <- fct_lump(estado_civil, 2, other_level = "Outros")
+
+Agrupado <- fct_lump(estado_civil, 2, other_level = "Outros") # O agrupamento definindo os principais mais usados e os outros - Com nomes denominado pelo criador -
+plot(Agrupado)
+
+# Reordenando os niveis dos fatores
+
+# Por padrão o R ordena os fatores por ordem alfabetica, mas podemos definir a ordem
+
+escolaridade <- factor(c("Superior", "Fundamental", "Pós-graduação", "Ensino médio", "Superior")) # Factor com ordenação em ordem alfabética por padrão
+
+plot(escolaridade)
+
+
+Reordenado <- fct_relevel(escolaridade, c("Fundamental", "Ensino médio", "Superior", "Pós-graduação")) # Factor reordenado conforme informado na função - Racional
+
+plot(Reordenado)
+
+length(escolaridade)
+
+Faturamento <- c(scan(nmax = 5))
+
+Reorder <- fct_reorder(escolaridade, Faturamento, mean) # Reordena os fatores do primeiro com base da função (3° item) do segundo elemento
+plot(Reorder)
