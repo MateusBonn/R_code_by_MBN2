@@ -80,3 +80,10 @@ Comiss�o_Luciana <- Valor_total_Emprestimo3*0.05
 
 Comiss�es <- cbind(Comiss�o_Melissa,Comiss�o_Carlos,Comiss�o_Luciana)
 row.names(Comiss�es) <- "Janeiro"
+
+## Atividade pratica 6 ##
+library(forcats)
+
+Resultado_funcionario1 <- factor(scan(what ="character", nmax = 4))
+Resultado_funcionario2 <- factor(scan(what ="character", nmax = 4))
+Resultado_funcionario3 <- factor(scan(what ="character", nmax = 4))
