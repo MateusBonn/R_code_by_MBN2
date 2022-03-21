@@ -91,3 +91,21 @@ if(resumo_df$quant_Abril[i] <= resumo_df$capacidade[i] ) {
       "Sua solicitação máxima é de: ", resumo_df$capacidade[i], "! \n")
   print("Pedido aprovado")
 }
+
+# with else
+
+i <- scan(nmax = 1)
+
+if(resumo_df$quant_Abril[i] <= resumo_df$capacidade[i] ) {
+  cat("A quantidade do pedido é: ", resumo_df$quant_Abril[i],". \n",
+      "Sua solicitação máxima é de: ", resumo_df$capacidade[i], "! \n")
+  print("Pedido aprovado")
+}
+else
+{cat("Desculpa mas sua solicitação supera a capacidade máxima do fornecedor ", resumo_df$fornecedor[i], "\n")
+  
+}
+
+# if with else and for
+
+
