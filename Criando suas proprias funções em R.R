@@ -108,4 +108,14 @@ else
 
 # if with else and for
 
+for (i in 1:nrow(resumo_df))
+{ if (resumo_df$quant_Abril[i] <= resumo_df$capacidade[i])
+  {print("Pedido aceito")
+  
+  }
+  else cat("Atenção! Seu pedido de ", resumo_df$quant_Abril[i], "supera o limite de",
+           resumo_df$capacidade[i], "do fornecedor ", resumo_df$fornecedor[i], "\n")
+}
+
+# creating a function 
 
